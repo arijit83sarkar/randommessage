@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<p>Click the button to display a random number between 1 and 10.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var x = Math.floor((Math.random() * 10) + 1);
-  document.getElementById("demo").innerHTML = x;
-}
-</script>
-
-</body>
+  <head>
+    <script>
+      function myFunction() {
+        var x = Math.floor((Math.random() * 10) + 1);
+        switch(x) {
+          case 1:
+            document.getElementById("demo").innerHTML = 'arijit';
+            break;
+          case 2:
+            document.getElementById("demo").innerHTML = 'suman';
+            break;
+          case 3:
+            document.getElementById("demo").innerHTML = 'arnab';
+            break;
+          case 4:
+            document.getElementById("demo").innerHTML = 'arup';
+            break;
+          case 5:
+            document.getElementById("demo").innerHTML = 'jayanta';
+            break;  
+          case 6:
+            document.getElementById("demo").innerHTML = 'sudipta';
+            break;
+          case 7:
+            document.getElementById("demo").innerHTML = 'santanu';
+            break;
+          case 8:
+            document.getElementById("demo").innerHTML = 'kishore';
+            break;
+          case 9:
+            document.getElementById("demo").innerHTML = 'biswanath';
+            break;
+          case 10:
+            document.getElementById("demo").innerHTML = 'bijay';
+            break;
+          default:
+            text = "I have never heard of that fruit...";
+        }        
+      }
+      </script>
+  </head>
+  <body onload="myFunction()">
+    <p id="demo"></p>
+  </body>
 </html>
